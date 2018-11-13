@@ -27,6 +27,6 @@ public class Login extends HttpServlet {
 			RequestDispatcher rs = request.getRequestDispatcher("index.html");
 			rs.include(request, response);
 		}
-
+		System.out.println();
 	}
 }
