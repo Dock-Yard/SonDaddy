@@ -6,6 +6,16 @@
     http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 
 	<servlet>
+		<servlet-name>ServletInterface</servlet-name>
+		<servlet-class>com.Servlets.OverrideServletInterface</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ServletInterface</servlet-name>
+		<url-pattern>/welcome</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
 		<servlet-name>Login</servlet-name>
 		<servlet-class>com.my.login.Login</servlet-class>
 	</servlet>
@@ -25,7 +35,7 @@
 		<url-pattern>/Welcome</url-pattern>
 	</servlet-mapping>
 
-	<!-- <display-name>LoginTest</display-name> -->
+	<display-name>LoginTest</display-name>
 
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>

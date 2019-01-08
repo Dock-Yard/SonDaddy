@@ -35,6 +35,7 @@ public class Validate {
 			//Class.forName("com.mysql.jdbc.Driver");
 
 			// creating connection with the database
+			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection("jdbc:mysql://172.20.84.84:3306/dangerzone_fsit", "devuser", "devuser123");
 			PreparedStatement ps = con.prepareStatement("select * from register where email=? and pass=?");
 			ps.setString(1, email);
